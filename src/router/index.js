@@ -7,12 +7,47 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    //component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    component: () => import('@/views/Home.vue')
   },
   {
-    path: '/about',
-    name: 'About',
-    //component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    path: '/payment',
+    name: 'Payment',
+    component: () => import('@/views/Payment.vue')
+  },
+  {
+    path: '/basket',
+    name: 'Basket',
+    component: () => import('@/views/Basket.vue')
+  },
+  {
+    path: '/ordering',
+    name: 'Ordering',
+    component: () => import('@/views/Ordering.vue')
+  },
+  {
+    path: '/catalog',
+    name: 'Catalog',
+    component: () => import('@/views/Catalog.vue')
+  },
+  {
+    path: '/contacts',
+    name: 'Сontacts',
+    component: () => import('@/views/Сontacts.vue')
+  },
+  {
+    path: '/profile',
+    name: 'Profile',
+    component: () => import('@/views/Profile.vue')
+  },
+  {
+    path: '/delivery',
+    name: 'Delivery',
+    component: () => import('@/views/Delivery.vue')
+  },
+  {
+    path: '/orderHistory',
+    name: 'OrderHistory',
+    component: () => import('@/views/OrderHistory.vue')
   },
   {
     path: '*',
